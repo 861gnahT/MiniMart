@@ -29,6 +29,8 @@ namespace MiniMart.Models
         public int SupplierId { get; set; }
 
         public Supplier Supplier { get; set; }
+        public ICollection<PromotionProduct> PromotionProducts { get; set; }
+
 
         public ICollection<Batch> Batches { get; set; }
             = new List<Batch>();
