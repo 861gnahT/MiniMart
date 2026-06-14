@@ -364,3 +364,4 @@ FodyWeavers.xsd
 MiniMart/appsettings.json
 # Added by code-review-graph
 .code-review-graph/
+/MiniMart
