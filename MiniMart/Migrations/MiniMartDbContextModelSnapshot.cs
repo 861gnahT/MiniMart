@@ -702,7 +702,7 @@ namespace MiniMart.Migrations
                     b.HasOne("MiniMart.Models.Receipt", "Receipt")
                         .WithMany("Batches")
                         .HasForeignKey("ReceiptId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Product");

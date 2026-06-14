@@ -12,8 +12,8 @@ using MiniMart.Data;
 namespace MiniMart.Migrations
 {
     [DbContext(typeof(MiniMartDbContext))]
-    [Migration("20260525082148_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20260525084002_FixCascade")]
+    partial class FixCascade
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -705,7 +705,7 @@ namespace MiniMart.Migrations
                     b.HasOne("MiniMart.Models.Receipt", "Receipt")
                         .WithMany("Batches")
                         .HasForeignKey("ReceiptId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Product");

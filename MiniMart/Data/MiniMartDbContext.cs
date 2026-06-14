@@ -160,6 +160,15 @@ namespace MiniMart.Data
             modelBuilder.Entity<Category>()
                 .HasIndex(c => c.CategoryCode)
                 .IsUnique();
+            // =========================
+            // BATCH
+            // =========================
+
+            modelBuilder.Entity<Batch>()
+                .HasOne(b => b.Receipt)
+                .WithMany(r => r.Batches)
+                .HasForeignKey(b => b.ReceiptId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
