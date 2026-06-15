@@ -3,6 +3,7 @@ using MiniMart.Models.Enums;
 
 namespace MiniMart.Models
 {
+    //quản lí đầu ra đầu vào sản phẩm
     public class InventoryTransaction : BaseEntity
     {
         public int InventoryTransactionId { get; set; }
@@ -15,9 +16,9 @@ namespace MiniMart.Models
 
         public int CurrentStock { get; set; }
 
-        public string? ReferenceType { get; set; }
+        public public ReferenceType? ReferenceType { get; set; } { get; set; } // ??? order, receipt, transfer, adjustment
 
-        public int? ReferenceId { get; set; }
+        public int? ReferenceId { get; set; } // gắn với id của order, receipt, transfer, adjustment
 
         public string? Note { get; set; }
 

@@ -6,19 +6,18 @@ namespace MiniMart.Models
     {
         public int CategoryId { get; set; }
 
-        public string CategoryCode { get; set; }
+        public string CategoryCode { get; set; } // Mã danh mục, ví dụ: "DRINK - đồ uống, FOOD - đồ ăn ..."
 
         public string CategoryName { get; set; }
 
         public string? Description { get; set; }
 
-        public string? ImageUrl { get; set; }
-
         public bool Status { get; set; }
 
         public int DisplayOrder { get; set; }
 
-        public int? ParentCategoryId { get; set; }
+        public int? ParentCategoryId { get; set; } 
+        //có những catogory có parent category và có những category không có parent category  
 
         public Category? ParentCategory { get; set; }
 

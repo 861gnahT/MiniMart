@@ -18,7 +18,7 @@ namespace MiniMart.Models
 
         public bool ReceiptStatus { get; set; }
 
-        public string? Note { get; set; }
+        public string? Note { get; set; } 
 
         // Supplier
         public int SupplierId { get; set; }

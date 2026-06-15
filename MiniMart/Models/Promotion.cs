@@ -1,7 +1,6 @@
-﻿
-namespace MiniMart.Models
-{
-    public class Promotion
+﻿namespace MiniMart.Models;
+using MiniMart.Models.Enums;
+public class Promotion
     {
         public int PromotionId { get; set; }
         public string Name { get; set; }
@@ -25,4 +24,4 @@ namespace MiniMart.Models
         public ICollection<PromotionProduct> PromotionProducts { get; set; }
         public ICollection<OrderPromotion> OrderPromotions { get; set; }
     }
-}
+
