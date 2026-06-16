@@ -18,7 +18,7 @@ namespace MiniMart.Models
 
         public int QuantityRemaining { get; set; }
 
-        public bool Status { get; set; }
+        public bool Status { get; set; } // true: còn, false: hết
 
         public int ProductId { get; set; }
 
