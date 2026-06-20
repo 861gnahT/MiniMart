@@ -16,7 +16,7 @@ namespace MiniMart.Models
 
         public int CurrentStock { get; set; }
 
-        public public ReferenceType? ReferenceType { get; set; } { get; set; } // ??? order, receipt, transfer, adjustment
+        public ReferenceType? ReferenceType { get; set; }  // ??? order, receipt, transfer, adjustment
 
         public int? ReferenceId { get; set; } // gắn với id của order, receipt, transfer, adjustment
 
