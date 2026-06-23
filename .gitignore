@@ -366,3 +366,8 @@ MiniMart/appsettings.json
 .code-review-graph/
 /MiniMart
 MiniMart/appsettings.json
+
+# Gemini AI files
+.gemini/
+AGENTS.md
+GEMINI.md
